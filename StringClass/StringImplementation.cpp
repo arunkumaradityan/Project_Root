@@ -50,4 +50,42 @@ CMyString::~CMyString()
 //**************************************************
 char* CMyString::RemoveDuplicate()
 {
+	int i = 0;
+	int insertCount = 0;
+	char* strTemp = new char[strlen(m_strInput)+1];
+	if(m_strInput)
+	{
+		strTemp[i++] = m_strInput[i];
+		++insertCount;
+	}
+
+	while(m_strInput[i] != NULL)
+	{
+		int j = 0;
+		bool IsAvailable = false;
+		do
+		{
+			if(m_strInput[i] == strTemp[j])
+			{
+				IsAvailable = true;
+				break;
+			}
+			else
+			{
+				++j;
+			}
+		}while(j < insertCount);
+
+		if(!IsAvailable)
+		{
+			strTemp[i] = m_strInput[i];
+			++insertCount;
+		}
+		++i;
+	}
+	strTemp[insertCount] = '\0';
+
+	delete []m_strInput;
+	m_strInput = strTemp;
+	return m_strInput;
 }
