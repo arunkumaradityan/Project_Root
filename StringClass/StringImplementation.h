@@ -40,8 +40,8 @@ public:
 	~CMyString();
 
 	// Copy Constructor and Assignment Operator
-	CMyString(CMyString & obj);
-	CMyString& operator=(CMyString & obj);
+	CMyString(const CMyString & obj);
+	CMyString& operator=(const CMyString & obj);
 
 	//**************************************************
 	/// Author		:	Jyotsna

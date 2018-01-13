@@ -38,6 +38,14 @@ CMyString::CMyString(char* strInput)
 CMyString::~CMyString()
 {
 }
+CMyString::CMyString(const CMyString & obj)
+{
+	if(NULL != obj.m_strInput)
+	{
+		m_strInput = new char[strlen(obj.m_strInput) + 1];
+		strcpy(m_strInput, obj.m_strInput);
+	}
+}
 
 //**************************************************
 /// Author		:	Jyotsna
