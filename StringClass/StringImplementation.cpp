@@ -40,7 +40,7 @@ CMyString::~CMyString()
 }
 
 //**************************************************
-/// Author		:	Arun Kr Adityan
+/// Author		:	Jyotsna
 /// Function	:	RemoveDuplicate
 /// FullPath	:	CMyString::RemoveDuplicate
 /// AccessType	:	public
