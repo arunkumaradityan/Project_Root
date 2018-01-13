@@ -1,1 +1,12 @@
 _Solutions.sdf
+*.tlog
+*.suo
+*.opensdf
+*.obj
+*.lastbuildstate
+*.log
+*.unsuccessfulbuild
+*.idb
+*.pdb
+*.ilk
+*.exe
