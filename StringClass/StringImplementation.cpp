@@ -38,6 +38,16 @@ CMyString::CMyString(char* strInput)
 CMyString::~CMyString()
 {
 }
+
+//**************************************************
+/// Author		:	Jyotsna
+/// Function	:	CMyString
+/// FullPath	:	CMyString::CMyString
+/// AccessType	:	public
+/// ReturnType	:	
+/// Parameter	:	const CMyString & obj
+/// Purpose		:	Copy Constructor
+//**************************************************
 CMyString::CMyString(const CMyString & obj)
 {
 	if(NULL != obj.m_strInput)
