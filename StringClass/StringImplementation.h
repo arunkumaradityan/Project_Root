@@ -7,6 +7,9 @@ public:
 	CMyString();
 	CMyString(char* strInput);
 
+	// Copy Constructor
+	CMyString(CMyString & obj);
+
 	// Destructor
 	~CMyString();
 
