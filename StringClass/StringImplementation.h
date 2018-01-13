@@ -5,9 +5,38 @@ using namespace std;
 class CMyString
 {
 public:
-	// Constructor and Destructors
+
+	//**************************************************
+	/// Author		:	Arun Kr Adityan
+	/// Function	:	CMyString
+	/// FullPath	:	CMyString::CMyString
+	/// AccessType	:	public
+	/// ReturnType	:	
+	/// Parameter	:	void
+	/// Purpose		:	Default Constructor
+	//**************************************************
 	CMyString();
+
+	//**************************************************
+	/// Author		:	Arun Kr Adityan
+	/// Function	:	CMyString
+	/// FullPath	:	CMyString::CMyString
+	/// AccessType	:	public
+	/// ReturnType	:	
+	/// Parameter	:	char* strInput
+	/// Purpose		:	Parameterize Constructor
+	//**************************************************
 	CMyString(char* strInput);
+
+	//**************************************************
+	/// Author		:	Arun Kr Adityan
+	/// Function	:	~CMyString
+	/// FullPath	:	CMyString::~CMyString
+	/// AccessType	:	public
+	/// ReturnType	:	
+	/// Parameter	:	
+	/// Purpose		:	Destructor
+	//**************************************************
 	~CMyString();
 
 	// Copy Constructor and Assignment Operator
