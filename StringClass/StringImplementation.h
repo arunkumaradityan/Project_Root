@@ -49,6 +49,16 @@ public:
 	/// Purpose		:	Copy Constructor
 	//**************************************************
 	CMyString(const CMyString & obj);
+
+	//**************************************************
+	/// Author		:	Jyotsna
+	/// Function	:	CMyString
+	/// FullPath	:	CMyString::CMyString
+	/// AccessType	:	public
+	/// ReturnType	:	CMyString&
+	/// Parameter	:	const CMyString & obj
+	/// Purpose		:	Equal Operator Overload
+	//**************************************************
 	CMyString& operator=(const CMyString & obj);
 
 	//**************************************************
