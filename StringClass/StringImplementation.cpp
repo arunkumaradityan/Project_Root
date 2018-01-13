@@ -66,7 +66,7 @@ CMyString::CMyString(const CMyString & obj)
 /// Parameter	:	const CMyString & obj
 /// Purpose		:	Equal Operator Overload
 //**************************************************
-CMyString& operator=(const CMyString & obj)
+CMyString& CMyString::operator=(const CMyString & obj)
 {
 }
 
