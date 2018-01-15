@@ -72,6 +72,50 @@ public:
 	//**************************************************
 	char* RemoveDuplicate();
 
+	//**************************************************
+	/// Author		:	Jyotsna
+	/// Function	:	Length
+	/// FullPath	:	CMyString::Length
+	/// AccessType	:	public
+	/// ReturnType	:	int
+	/// Parameter	:	void
+	/// Purpose		:	It gives length of given string
+	//**************************************************
+	int Length();
+
+	//**************************************************
+	/// Author		:	Jyotsna
+	/// Function	:	Append
+	/// FullPath	:	CMyString::Append
+	/// AccessType	:	public
+	/// ReturnType	:	void
+	/// Parameter	:	char*
+	/// Purpose		:	It will append the value at end of the string
+	//****************************************************************
+	void Append(char*);  
+
+	//**************************************************
+	/// Author		:	Jyotsna
+	/// Function	:	Insert
+	/// FullPath	:	CMyString::Insert
+	/// AccessType	:	public
+	/// ReturnType	:	void
+	/// Parameter	:	char* , int
+	/// Purpose		:	It will append the value at position of the string
+	//*********************************************************************
+	void Insert(char* , int Pos);  
+
+	//**************************************************
+	/// Author		:	Jyotsna
+	/// Function	:	Concat
+	/// FullPath	:	CMyString::Concat
+	/// AccessType	:	public
+	/// ReturnType	:	char*
+	/// Parameter	:	char* , char*
+	/// Purpose		:	It will add two string
+	//******************************************
+	char* Concat(char* str1, char* str2);
+
 	// Private Data Members
 private:
 	char* m_strInput;
