@@ -114,7 +114,7 @@ public:
 	/// Parameter	:	char* , char*
 	/// Purpose		:	It will add two string
 	//******************************************
-	char* Concat(char* str1, char* str2);
+	char* Concat(char* str1 , char* str2);
 
 	// Private Data Members
 private:

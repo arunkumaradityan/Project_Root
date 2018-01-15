@@ -80,7 +80,6 @@ CMyString& CMyString::operator=(const CMyString & obj)
 			strcpy(m_strInput, obj.m_strInput);
 		}
 	}
-
 	return *this;
 }
 
@@ -166,9 +165,9 @@ int CMyString::Length()
 /// FullPath	:	CMyString::Append
 /// AccessType	:	public
 /// ReturnType	:	void
-/// Parameter	:	char*
+/// Parameter	:	char* a
 /// Purpose		:	It will append the value at end of the string
-//****************************************************************
+//***************************************************
 void CMyString :: Append(char* a)
 {
 	if(m_strInput != NULL)
@@ -192,25 +191,20 @@ void CMyString :: Append(char* a)
 /// FullPath	:	CMyString::Insert
 /// AccessType	:	public
 /// ReturnType	:	void
-/// Parameter	:	char*,int
+/// Parameter	:	char* a
+/// Parameter	:	int pos
 /// Purpose		:	It will append the value at position of the string
-//*********************************************************************
+//**************************************************
 void CMyString :: Insert(char* a, int Pos)
 {
 	if(m_strInput != NULL)
 	{
 		char *temp = new char[strlen(a)+strlen(m_strInput)+1];
-
 		strncpy(temp, m_strInput, Pos);
-
 		char* show=temp;
-
 		temp=temp+ Pos;
-
 		strcpy(temp, a);
-
 		temp = temp + strlen(a);
-
 		char *ref = m_strInput;
 		ref = ref+Pos;
 		strcpy(temp,ref);
@@ -224,9 +218,10 @@ void CMyString :: Insert(char* a, int Pos)
 /// FullPath	:	CMyString::Concat
 /// AccessType	:	public
 /// ReturnType	:	char*
-/// Parameter	:	char* , char*
+/// Parameter	:	char* str1
+/// Parameter	:	 char* str2
 /// Purpose		:	It will add two string
-//******************************************
+//***************************************************
 char* CMyString:: Concat(char* str1, char* str2)
 {
 	char *temp = new char[strlen(str1)+strlen(str2)+1];
