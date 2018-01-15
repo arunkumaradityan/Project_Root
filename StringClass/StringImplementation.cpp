@@ -167,7 +167,7 @@ int CMyString::Length()
 /// ReturnType	:	void
 /// Parameter	:	char* a
 /// Purpose		:	It will append the value at end of the string
-//***************************************************
+//**************************************************
 void CMyString :: Append(char* a)
 {
 	if(m_strInput != NULL)
