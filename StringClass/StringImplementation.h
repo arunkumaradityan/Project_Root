@@ -91,7 +91,7 @@ public:
 	/// ReturnType	:	void
 	/// Parameter	:	char*
 	/// Purpose		:	It will append the value at end of the string
-	//****************************************************************
+	//**************************************************
 	void Append(char*);  
 
 	//**************************************************
@@ -102,7 +102,7 @@ public:
 	/// ReturnType	:	void
 	/// Parameter	:	char* , int
 	/// Purpose		:	It will append the value at position of the string
-	//*********************************************************************
+	//**************************************************
 	void Insert(char* , int Pos);  
 
 	//**************************************************
@@ -113,7 +113,7 @@ public:
 	/// ReturnType	:	char*
 	/// Parameter	:	char* , char*
 	/// Purpose		:	It will add two string
-	//******************************************
+	//**************************************************
 	char* Concat(char* str1 , char* str2);
 
 	// Private Data Members
